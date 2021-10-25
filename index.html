@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Akhir My CSS -->
+
+    <section class="jumbotron text-center">
+      <img src="img/logo-sulteng.png" alt="crnet-id" width="50" />
+      <h1 class="display-6">HELPDESK PENGADAAN BARANG/JASA</h1>
+      <p class="lead">Untuk Konsultasi dan Gangguan Permasalahan</p>
+    </section>
+
+    <title>Helpdesk | Biro PBJ</title>
+  </head>
+  <body id="home"></body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">BIRO PBJ SULTENG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formulir">Form Helpdesk</a>
+          </li>
+          <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"        data-bs-toggle="dropdown" aria-expanded="false">
+                Aplikasi Lainnya
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="https://lpse.sultengprov.go.id/" target="_blank">Aplikasi SPSE v4.4</a></li>
+                    <li><a class="dropdown-item" href="https://sikap.lkpp.go.id/" target="_blank">Aplikasi SiKAP</a></li>
+                    <li><a class="dropdown-item" href="https://sirup.lkpp.go.id/" target="_blank">Aplikasi SiRUP v2.3</a></li>
+                </ul>
+          </div>
+          <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Agregasi Data Penyedia (ADP)
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="http://www.inaproc.lkpp.go.id/agregasi/aktivasi/login" target="_blank">Aktivasi Penyedia</a></li>
+                    <li><a class="dropdown-item" href="https://sikap.lkpp.go.id/adp/reset-password" target="_blank">Reset Password Penyedia</a></li>
+                </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Kontak kami -->
+  <section id="formulir">
+    <div class="container">
+      <h4 class="alert alert-secondary text-center mt-3">FORMULIR REGISTRASI</h4>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terima kasih!</strong> Data sudah tersimpan.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+          <form name="lpse-helpdesk-form">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nikitas" class="form-label">NIK/KTP/SIM/Indentitas Lain</label>
+                <input type="text" class="form-control" id="nikitas" aria-describedby="nikitas" name="nikitas" placeholder="Masukan Nomor Identitas anda" />
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Masukan nama lengkap anda" />
+            </div>
+            <div class="col-md-5 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Masukan email aktif" />
+            </div>
+            <div class="row"></div>
+            <div class="col-6 mb-3">
+              <label for="npwp" class="form-label">NPWP</label>
+              <input type="text" class="form-control" id="npwp" aria-describedby="npwp" name="npwp" placeholder="Masukan Nomor NPWP cth: 000.000.0-000.000" />
+            </div>
+            <div class="row"></div>
+            <div class="col-6 mb-3">
+              <label for="bduinstansi" class="form-label">Badan Usaha/Instansi</label>
+              <input type="text" class="form-control" id="BduInstansi" aria-describedby="bduinstansi" name="bduinstansi" placeholder="Masukan nama badan usaha atau instansi" />
+            </div>
+            <div class="row"></div>
+            <div class="col-md-6 mb-3">
+              <label for="almbduinstansi" class="form-label">Alamat Lengkap</label>
+              <input type="text" class="form-control" id="almbduinstansi" aria-describedby="almbduinstansi" name="almbduinstansi" placeholder="Masukan Alamat lengkap" />
+            </div>
+            <div class="col-md-3 mb-3 ">
+              <label for="kotakab" class="form-label">Kota/Kabupaten</label>
+              <select id="KotaKab" aria-describedby="kotakab" name="kotakab" class="form-select">
+                <option selected>Pilih...</option>
+                <option>Palu</option>
+                <option>Donggala</option>
+                <option>Sigi</option>
+                <option>Parigi Moutong</option>
+                <option>Poso</option>
+                <option>Tojo Una-una</option>
+                <option>Morowali</option>
+                <option>Morowali Utara</option>
+                <option>Banggai</option>
+                <option>Banggai Kepulauan</option>
+                <option>Banggai Laut</option>
+                <option>Toli-toli</option>
+                <option>Buol</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="kodepos" class="form-label">Kode Pos</label>
+              <input type="text" class="form-control" id="KodePos" aria-describedby="kodepos" name="kodepos" />
+            </div>
+            <div class="row"></div>
+            <div class="col-6 mb-3">
+              <label for="jabatan" class="form-label">Jabatan</label>
+              <input type="text" class="form-control" id="jabatan" aria-describedby="jabatan" name="jabatan" placeholder="Masukan jabatan anda" />
+            </div>
+            <div class="row"></div>
+            <div class="col-md-3 mb-3">
+              <label for="tujuan" class="form-label">Tujuan</label>
+              <select id="tujuan" aria-describedby="tujuan" name="tujuan" class="form-select">
+                <option selected>Pilih...</option>
+                <option>Verifikasi Akun SPSE</option>
+                <option>Klarifikasi</option>
+                <option>Reviuw HPS</option>
+                <option>Konsultasi PBJ</option>
+                <option>Permasalahan Aplikasi</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="col-9 mb-3">
+              <label for="pesan" class="form-label">Permasalahan</label>
+              <textarea class="form-control" id="pesan" name="pesan" placeholder="Masukan Detail Tujuan/permasalahan anda" rows="3"></textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck"> Klik disini apabila isian sudah sesuai </label>
+              </div>
+            </div>
+            <div class="col-12 mb-5">
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+</section>
+  <!-- Akhir kontak kami -->
+  
+      <!-- Footer -->
+      <footer class="bg-primary text-white text-center justify-content-center"> 
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://www.instagram.com/crnetid_plw" target="_blank">Admin</a>
+          </div>
+      </footer>
+      <!-- Akhir Footer -->
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <!-- AOS dimatikan ----------------
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        const galleryImage = document.querySelectorAll('.gallery-img');
+        galleryImage.forEach((img, i) => {
+          img.dataset.aos = 'fade-down';
+          img.dataset.aosDelay = i * 100;
+          img.dataset.aosDuration = 1000;
+        })
+        AOS.init({
+          once: false,
+          duration: 2000,
+        });
+      </script>
+       -->
+    <!-- GSAP dimatikan -----------------
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+      <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', { duration: 2, delay: 1.5, text:'Untuk Konsultasi dan Gangguan Permasalahan'});
+        gsap.from('.jumbotron img', { duration: 1, rotateY: 360, opacity: 0});
+        gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back'});
+      </script>
+   -->
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTaElZQw6f9fhoGtyMNIBUY1hNXQ2IQanUt0SP1hC-Q4fVWcFJ65APiMfp45k51dKS5Q/exec';
+        const form = document.forms['lpse-helpdesk-form']
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+  
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          // ketika tombol submit diklik
+          // tampilkan tombol loading, hilangkan tombol kirim 
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+  
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+             // tampilkan tombol kirim, hilangkan tombol loading
+              btnLoading.classList.toggle('d-none');
+              btnKirim.classList.toggle('d-none');
+              // tampilkan alert
+              myAlert.classList.toggle('d-none')
+              // reset formnya
+              form.reset();
+              console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message))
+        });
+      </script>
+    </body>
+</html>
